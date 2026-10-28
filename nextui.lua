@@ -579,7 +579,7 @@ end
 local IconAssets = {}
 do
 	local urls = {
-		"https://diser.me/nextui/icons.lua",
+		"https://raw.githubusercontent.com/hylyshala/Hiperioly/refs/heads/main/icons.lua",
 		"https://raw.githubusercontent.com/dawid-scripts/Fluent/refs/heads/master/src/Icons.lua",
 	}
 
@@ -1572,7 +1572,7 @@ local Notify
 local function loadNotify()
 	if Notify then return Notify end
 	local ok, lib = pcall(function()
-		return loadstring(game:HttpGet("https://diser.me/notify/library/notify.lua"))()
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/hylyshala/Hiperioly/refs/heads/main/notify.lua"))()
 	end)
 	if ok and lib then Notify = lib end
 	return Notify
