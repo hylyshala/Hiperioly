@@ -757,11 +757,11 @@ local function resolveIcon(name)
 		if next(IconAssets) == nil then
 			if not warnedIcons[""] then
 				warnedIcons[""] = true
-				print("[Next Development] ERROR: The icon list could not be loaded, icons will not show.")
+				print("ERROR: The icon list could not be loaded, icons will not show.")
 			end
 		elseif not warnedIcons[name] then
 			warnedIcons[name] = true
-			print("[Next Development] ERROR: Unknown icon \"" .. name .. "\"")
+			print("ERROR: Unknown icon \"" .. name .. "\"")
 		end
 	end
 	return found
@@ -6713,7 +6713,6 @@ end
 NextUI:LoadFavorites()
 genv.NextUI = NextUI
 
-warn("[NEXT DEVELOPMENT] NextUI Loaded ~ Library v" .. NextUI.Version)
-warn("[NEXT DEVELOPMENT] UI by Next Development ~ diser.me/next")
+warn("HillpyHub Loaded")
 
 return NextUI
